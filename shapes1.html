@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canvasshapes</title>
+    <style>
+        canvas{
+            border: 1px solid rgb(204, 30, 30);
+            margin :50px auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="can" width="1000" height="500" ></canvas>
+    <script>
+        var ctx=document.getElementById("can").getContext("2d");
+       /* ctx.beginPath()
+        ctx.strokeStyle="green";
+        
+        ctx.arc(250,250,200,(Math.PI/180)*0,(Math.PI/180)*360,true);
+        ctx.stroke();*/
+       
+       /* for(var i=0;i<500;i+=50)
+       { ctx.beginPath()
+        ctx.strokeStyle="green";
+        
+        ctx.arc(i,i,100,(Math.PI/180)*0,(Math.PI/180)*360,true);
+        ctx.stroke();
+        ctx.beginPath()
+        ctx.arc(i+300,i,100,(Math.PI/180)*0,(Math.PI/180)*360,true);
+        //ctx.arc(i+100,i+10,i,(Math.PI/180)*0,(Math.PI/180)*360,true);
+
+       // ctx.arc(i,200,200,(Math.PI/180)*0,(Math.PI/180)*360,true);
+        ctx.stroke();}*/
+        ctx.beginPath();
+        ctx.strokeStyle="green";
+        ctx.arc(250,250,10,(Math.PI/180)*0,(Math.PI/180)*360,true);
+       // ctx.arc(250,500,10,(Math.PI/180)*0,(Math.PI/180)*360,true);
+        ctx.stoke();
+        ctx.closePath();
+
+       
+        
+    </script>
+    
+</body>
+</html>

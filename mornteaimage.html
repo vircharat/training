@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>image</title>
+    <style>
+        canvas{
+            border : 10px solid green;
+           
+        }
+    </style>
+</head>
+<body>
+    <canvas width="600" height="600" id="can"></canvas>
+    <canvas width="600" height="600" id="can1"></canvas>
+    <canvas width="600" height="600" id="can2"></canvas>
+    
+    <script>
+        var ctx=document.getElementById("can").getContext("2d");
+       // ctx.drawImage(document.getElementById("drs"))
+       var img1=new Image();
+            img1.src="images/doctorstrange.jpg";
+            img1.onload=function(){
+                ctx.rotate((Math.PI/100)*0);
+                ctx.drawImage(img1,250,250);
+            }
+        var img2=new Image();
+            img2.src="images/rajani.jpg";
+            img2.onload=function(){
+                ctx.rotate((Math.PI/100)*0);
+                ctx.drawImage(img2,0,300);
+            }
+
+    </script>
+    
+    
+</body>
+</html>
